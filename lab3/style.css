@@ -1,0 +1,297 @@
+@charset "UTF-8";
+body {
+    background: url(images/bg-tile.png);
+}
+
+a {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.site-inner {
+    position: relative;
+    width: 58.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-inner-abs {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 58.75em;
+    margin-left: -29.375em;
+}
+
+
+@font-face {
+    font-family: segoeui;
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: segoeuib;
+    font-weight: normal;
+    font-style: normal;
+    }
+.heading {
+    color: #464b4f;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+.heading.h-01 {
+    font-family: segoeuib, Arial, sans-serif;
+    font-size: 80px;
+    font-weight: normal;
+    line-height: 1;
+    text-transform: uppercase;
+}
+.heading.h-02 {
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1;
+}
+.heading.h-03 {
+    font-family: segoeuib, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.copy-01 {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 30px;
+    color: #464b4f;
+    line-height: 42px;
+}
+
+.copy-02 {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 18px;
+    color: #888a8b;
+    line-height: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 23px 63px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.button.main {
+    background: #7b77c9;
+    color: white;
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 14px;
+}
+.button.white {
+    background: white;
+    color: #888a8b;
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 14px;
+}
+.button.rounded {
+    border-radius: 3px;
+}
+.button:hover {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=” $value * 100 “)";
+    filter: alpha(opacity=70);
+    zoom: 1;
+}
+
+.section {
+    padding: 114px 0;
+}
+.section .h-01 {
+    text-align: center;
+}
+
+#page-hero {
+    text-align: center;
+    background: #23232e;
+}
+
+#page-hero .h-01 {
+    color: white;
+    margin-bottom: 50px;
+}
+#page-hero .copy-02 {
+    color: white;
+    margin-bottom: 180px;
+    padding: 0 240px;
+}
+
+
+#page-about .copy-01 {
+    text-align: center;
+    margin-bottom: 42px;
+    padding: 0 20px;
+}
+#page-about .h-01 {
+    margin: 104px 0 90px 0;
+}
+#page-about .h-03 {
+    margin-bottom: 18px;
+}
+#page-about .columns {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -moz-box-align: stretch;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -ms-flex-align: stretch;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-pack: start;
+    -moz-box-pack: start;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+}
+#page-about aside {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 285px;
+    float: left;
+    margin-right: 20px;
+}
+#page-about aside:last-child {
+    margin: 0;
+}
+
+
+#page-photography {
+    text-align: center;
+}
+#page-photography .h-01 {
+    margin-bottom: 43px;
+}
+#page-photography .copy-01 {
+    margin-bottom: 50px;
+    padding: 0 60px;
+    color: #888a8b;
+}
+#page-photography #photo-grid:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#page-photography .photo-item {
+    float: left;
+    margin: 0 20px 20px 0;
+    cursor: pointer;
+}
+#page-photography .photo-item figure {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+#page-photography .photo-item figure img {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+#page-photography .photo-item:nth-child(3n) {
+    margin-right: 0;
+}
+#page-photography .photo-item:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#page-photography .button {
+    margin-top: 66px;
+    padding: 23px 48px;
+}
+
+#page-signup {
+    text-align: center;
+    background: #23232e;
+}
+#page-signup #icon-infinity {
+    height: 47px;
+    width: 87px;
+}
+#page-signup #icon-infinity * {
+    fill: white;
+}
+#page-signup .copy-02 {
+    color: white;
+    margin-top: 46px;
+    padding: 0 250px;
+}
+#page-signup .signup-form {
+    margin-top: 52px;
+}
+#page-signup input, #page-signup button {
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    padding: 18px 20px;
+    font-family: segoeui, Arial, sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#page-signup input {
+    width: 338px;
+    margin-right: 7px;
+}
+#page-signup button {
+    position: relative;
+    top: 3px;
+    width: 215px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#page-signup .form-result {
+    color: white;
+    padding: 20px 0;
+}
+
+#page-footer {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+#page-footer .copy-02 {
+    margin-bottom: 17px;
+}
+
+
+
