@@ -239,13 +239,7 @@ a {
     text-align: center;
     background: #23232e;
 }
-#page-signup #icon-infinity {
-    height: 47px;
-    width: 87px;
-}
-#page-signup #icon-infinity * {
-    fill: white;
-}
+
 #page-signup .copy-02 {
     color: white;
     margin-top: 46px;
