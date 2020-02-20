@@ -464,14 +464,5 @@ pre code {
   .contact .author-message .speech-bubble:after {
     display: none;
   }
-  .contact .social-icons a {
-    width: 36px;
-    height: 36px;
-    padding-top: 7px;
-    margin-right: 2px;
-  }
-  .contact .social-icons a .fa:before {
-    font-size: 18px;
-  }
 }
 
