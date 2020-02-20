@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+ <html lang="uk">
+<head>
+    <title>Сторінк з використанням Bootstrap</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Bootstrap site for lab 5">
+    <meta name="author" content="Olha Bielaia">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link id="stylesheet" rel="stylesheet" href="css/animate.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="css/style.css">
+</head> 
+
+<body data-spy="scroll">
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left animated fadeInUp">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title">Лабораторна 5</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Навігація</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav animated fadeInUp">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Головна</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">Теорія</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Переваги</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#docs">Інструменти</a></li>
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Контакти</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title animated fadeInUp">Boot<span class="highlight">strap</span></h2>
+            <p class="intro animated fadeInUp">Адаптивний сайт про особливості фреймворку Bootstrap</p>
+        </div><!--//container-->
+    </section><!--//promo-->
+    
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">Що таке Bootstrap?</h2>
+                <dl class="intro text-center">
+            <dt>Bootstrap</dt>
+            <dd>найпопулярніший CSS фреймворк від компанії Twitter для адаптивної верстки сайтів</dd>
+                </dl>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <em class="fa fa-heart"></em>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">CSS</h3>
+                        <p>Bootstrap — це набір готових CSS файлів, який можна підключити до вашого сайту, щоб швидко і якісно зробити його «мобільним» — тобто таким, щоб він коректно відображався на телефонах і планшетах.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <em class="fa fa-clock-o"></em>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Основа</h3>
+                        <p>Основа Bootstrap — модульна сітка з 12 колонок, яка вміє перелаштовуватися в залежності від розміру екрану пристрою відвідувача вашого сайту.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <em class="fa fa-crosshairs"></em>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Аналоги</h3>
+                        <p>Bootstrap — не єдиний спосіб створення адаптивної верстки. Є альтернативи — такі, як Foundation. Також можна зробити адаптивність повністю вручну, використовуючи Media Queries. Це значно довше, але цілком можливо.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                </div><!--//item-->               
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">Переваги Bootstrap</h2>
+            <ul class="feature-list list-unstyled">
+                <li><em class="fa fa-check"></em> Наявність великої кількості шаблонів</li>
+                <li><em class="fa fa-check"></em> Легкість у налаштуванні та використанні</li>
+                <li><em class="fa fa-check"></em> Економія часу</li>
+                <li><em class="fa fa-check"></em> Постійне оновлення</li>
+                <li><em class="fa fa-check"></em> Можливість взаємодії з іншими фреймворками</li>
+                <li><em class="fa fa-check"></em> Безкоштовне завантаження</li>
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******DOCS****** --> 
+    <section id="docs" class="docs section">
+        <div class="container">
+            <div class="docs-inner">
+            <h2 class="title text-center">Основні інструменти</h2>
+            <div class="block">
+                <p>Основні інструменти Bootstrap:</p>
+                <ul class="list-unstyled">
+                    <li><strong>Сітки</strong> - заздалегідь задані розміри колонок, які можна відразу ж використовувати, наприклад, ширина колонки 140 px відноситься до класу .span2, який можна використовувати в CSS-описі документа.</li>
+                    <li><strong>Шаблони</strong> - фіксований або гумовий шаблон документа.</li>
+                    <li><strong>Типографіка</strong> - опису шрифтів, визначення деяких класів для шрифтів, таких як код, цитати і т.д.</li>
+                    <li><strong>Медіа</strong> - надає деяке упорядкування зображень та відео.</li>
+                    <li><strong>Таблиці</strong> - кошти оформлення таблиць, аж до додавання функціональності сортування.</li>
+                    <li><strong>Форми</strong> - класи для оформлення форм і деяких подій, що відбуваються з ними.</li>
+                    <li><strong>Навігація</strong> - класи оформлення для панелей, вкладок, переходу по сторінках, меню і панелі інструментів.</li>
+                    <li><strong>Алерт</strong> - оформлення діалогових вікон, підказок і спливаючих вікон.</li>
+                </ul>
+                </div>
+            </div><!--//docs-inner-->         
+        </div><!--//container-->
+    </section><!--//features-->
+    
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container ">
+            <div class="contact-inner">
+                <h2 class="title  text-center">Контакти</h2>
+                <p class="intro  text-center">Я сподіваюсь, що цей сайт про Bootstrap буде корисним. <br />
+                    Не соромтеся зв’язатися, якщо у вас є якісь питання чи пропозиції.</p>
+                <div class="author-message animated fadeInLeft">
+                    <div class="profile">
+                        <img class="img-responsive" src="images/profile.png" alt="Фото профілю"  />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Хочете отримати більше корисних сайтів у майбутньому?</h3>
+                        <p>Якщо є деякі запитання можете написати на пошту <strong>olbabelaya1997@gmail.com</strong>
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright">Copyright © 2020. Всі права захищені.</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+</body>
+</html> 
+
