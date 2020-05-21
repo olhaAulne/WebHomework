@@ -274,20 +274,15 @@ dp.onEventDeleted = function(args) {
 <footer class="footer">
     <address>(с)Автор лабораторної роботи: студентка спеціальності ІУСТ, Бєлая Ольга</address>
 </footer>
-<script>
-if (‘serviceWorker’ in navigator) {
- window.addEventListener(‘load’, function() {  
-   navigator.serviceWorker.register(‘/sw.js’).then(
-     function(registration) {
-       // Registration was successful
-       console.log(‘ServiceWorker registration successful with scope: ‘, registration.scope); },
-     function(err) {
-       // registration failed :(
-       console.log(‘ServiceWorker registration failed: ‘, err);
-     });
- });
-}
-</script>
+ <script>
+		if ('serviceWorker' in navigator) {
+		    navigator.serviceWorker.register('/service-worker.js').then((reg) => 
+		    	console.log('Service Worker registered successfully.')
+		    ).catch((error) => 
+		    	console.log('Service Worker registration failed:', error)
+		    );
+		}
+	</script>
 </body>
 
 </html>
