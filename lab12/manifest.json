@@ -1,0 +1,21 @@
+{
+  "name": " Hotel room reservation",
+  "short_name": "Hotel",
+  "lang": "uk",
+  "start_url": "/index.php",
+  "display": "standalone",
+  "background_color": "#b192fa",
+  "theme_color": "#b192fa",
+  "icons": [
+    {
+      "src": "hotel.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+	{
+      "src": "hotel2.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ]
+}

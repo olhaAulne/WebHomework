@@ -1,0 +1,21 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #ffffff;
+	font-size: 14px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    padding: 5px;
+}
+
+.footer {
+    padding: 15px 0;
+    display: block;
+    clear: left;
+}
